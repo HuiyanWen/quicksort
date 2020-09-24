@@ -1,5 +1,4 @@
 # 实现快排并改进
-
 ## 随机快排
 	算法Random quicksort(S)
 	输入 :无序数组S
@@ -44,8 +43,6 @@
 		swap_int(&A[i + 1], &A[r]);
 		return i + 1;		
 	}
-
-
 ## 三路快排
 	算法Trple sort(S)
 	输入 :无序数组S
@@ -57,7 +54,10 @@
 	5:   If 当前i指向的元素>v   then   swap(S[gt-1], S[i]), gt←gt-1, i←i+1
 	6:   If   gt==i   then swap(S[lt], S[p]), lt←lt-1
 	7:   不断递归，重复第1-6步
-
+![](https://github.com/HuiyanWen/quicksort/blob/master/pic/%E4%B8%89%E8%B7%AF%E5%BF%AB%E6%8E%92.png)
 ## 实验结果
-
+##### 随机快排运行结果(横轴为数据集的元素重复率，纵轴为排序时间)
 ![双路快排](https://github.com/HuiyanWen/quicksort/blob/master/pic/%E9%9A%8F%E6%9C%BA%E5%BF%AB%E6%8E%92%E7%BB%93%E6%9E%9C.png)
+
+##### 三路快排和系统库函数运行结果对比(对比的库函数为qsort)
+![](https://github.com/HuiyanWen/quicksort/blob/master/pic/%E4%B8%89%E8%B7%AF%E5%BF%AB%E6%8E%92%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94.png)
